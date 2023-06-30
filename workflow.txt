@@ -5,3 +5,10 @@ npx tailwind init
 to run: npm run dev
 getform.io -> generate endpoint for free -> create
 -> paste into action in form as "https://getform.io/f/{customSlug}
+
+Add to github pages
+git add dist -f
+npm install gh-pages --save-dev
+Got to package.json and add "homepage" prop
+Go to vite.config.js and add repo
+npm run build
