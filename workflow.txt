@@ -1,0 +1,7 @@
+npm create vite@latest
+npm install -D tailwindcss postcss autoprefixer
+npx tailwind init
+
+to run: npm run dev
+getform.io -> generate endpoint for free -> create
+-> paste into action in form as "https://getform.io/f/{customSlug}
