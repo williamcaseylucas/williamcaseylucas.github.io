@@ -4,7 +4,7 @@ function Intro() {
   return (
     <div className="flex items-center justify-center flex-col text-center pt-20 pb-6">
       <img
-        className="rounded-full w-96 h-96 m-3 p-3"
+        className="rounded-full w-96 h-96 object-cover m-3 p-3"
         src="/assets/headshot.jpg"
         alt=""
       />

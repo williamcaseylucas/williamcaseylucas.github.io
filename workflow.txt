@@ -8,6 +8,5 @@ getform.io -> generate endpoint for free -> create
 
 Add to github pages
 1. Change vite.config file
-2. Change package.json
-
-
+2. Add workflow script
+3. Just commit changes it will deploy for you
