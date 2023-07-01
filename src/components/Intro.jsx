@@ -21,7 +21,7 @@ function Intro() {
           Tech) in Atlanta, GA. I have a strong academic background, being a
           Dean's List and Faculty Honors student and earning a GPA of 4.0. Prior
           to attending GA Tech, I graduated as valedictorian of my high school
-          class in May 2019 with a GPA of 4.5/5.0.
+          class in May 2019.
         </p>
         <br />
         <p>

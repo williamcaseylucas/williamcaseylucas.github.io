@@ -12,7 +12,7 @@ export default defineConfig({
   plugins: [react()],
   root: '.',
   build: {
-    outDir: './build'
+    outDir: './dist'
   },
   esbuild: {
     loader: 'jsx',

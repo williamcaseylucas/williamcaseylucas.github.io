@@ -26,7 +26,7 @@ export default [
         year: 'Jan 2022',
         title: 'Teaching Assistant for CS 1331 Intro to Object Oriented Programming',
         duration: '1 semester',
-        details: '• Thoroughly explained and clarified how to conceptualize object-oriented concepts/principles for CS 1331 students – Intro to Object Oriented Programming. \
+        details: 'Thoroughly explained and clarified how to conceptualize object-oriented concepts/principles for CS 1331 students – Intro to Object Oriented Programming. \
         Wrote custom tests using Junit and Reflection API to autograde HW assignments. \
         Graded HW assignments and tests weekly and monthly, respectively. \
         Held in-person office hours and online office hours weekly. \
