@@ -3,17 +3,20 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  jsx: {
-    // Accept both .js and .jsx files
-    factory: 'React.createElement',
-    fragment: 'React.Fragment',
-    // Other JSX options...
-  },
+  // jsx: {
+  //   // Accept both .js and .jsx files
+  //   factory: 'React.createElement',
+  //   fragment: 'React.Fragment',
+  //   // Other JSX options...
+  // },
   base: "/williamcaseylucas.github.io/",
   plugins: [react()],
   root: '.',
   build: {
     outDir: './build'
+  },
+  esbuild: {
+    loader: 'jsx',
   },
   optimizeDeps: {
     esbuildOptions: {
@@ -22,7 +25,4 @@ export default defineConfig({
       },
     },
   },
-  esbuild: {
-    loader: 'jsx',
-  }
 })
