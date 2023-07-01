@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   // jsx: {
   //   // Accept both .js and .jsx files
-  //   factory: 'React.createElement',
-  //   fragment: 'React.Fragment',
+    factory: 'React.createElement',
+    fragment: 'React.Fragment',
   //   // Other JSX options...
   // },
   base: "/williamcaseylucas.github.io/",
