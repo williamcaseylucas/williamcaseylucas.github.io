@@ -8,7 +8,7 @@ export default defineConfig({
     factory: 'React.createElement',
     fragment: 'React.Fragment',
   },
-  base: "/williamcaseylucas.github.io/",
+  base: "/",
   plugins: [react()],
   root: '.',
   build: {
