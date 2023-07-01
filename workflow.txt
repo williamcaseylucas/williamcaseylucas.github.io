@@ -12,3 +12,4 @@ npm install gh-pages --save-dev
 Got to package.json and add "homepage" prop
 Go to vite.config.js and add repo
 npm run build
+git subtree push --prefix dist origin gh-pages
