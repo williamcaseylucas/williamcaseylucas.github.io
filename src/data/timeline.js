@@ -3,7 +3,7 @@ export default [
         year: 'May 2023 - August 2023',
         title: 'Kyndryl - Software Engineer',
         duration: '3 months',
-        details: "Developed a counter app using Terraform for provisioning a EC2 instance, API Gateway, Lambda function, IAM rules,  and CloudWatch logs to the cloud and connected it with GCP's BigQuery & Dockerized a self-hosted runner for Github Actions to demonstrate Cloud Hybrid solutions to implementing full stack web applications on the cloud with a CI/CD pipeline. \
+        details: "Developed a counter app using Terraform to provision an EC2 instance, API Gateway, Lambda function, IAM rules, and CloudWatch logs in the cloud. I connected it with GCP's BigQuery and Dockerized a self-hosted runner for Github Actions. This demonstrated cloud hybrid solutions for implementing full stack web applications with a CI/CD pipeline. \
         Presented a presentation on API Gateway equivalents across major cloud providers listing cost, feature, and use-case differences to employees in the Cloud division"
     },
     {
