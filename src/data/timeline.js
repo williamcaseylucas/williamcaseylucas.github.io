@@ -17,7 +17,7 @@ export default [
     },
     {
         year: 'Janurary 2022',
-        title: 'Vertically Integrated Project – Experimental Flights, the Georgia Institute of Technology',
+        title: 'Georgia Tech Research - Vertically Integrated Project – Experimental Flights',
         duration: '4 semesters',
         details: 'Contributed to the development of a drone delivery system for the delivery of small packages on the Georgia \
         Tech campus as part of a Vertically Integrated Project (VIP) on Experimental Flights. \
@@ -35,11 +35,17 @@ export default [
     },
     {
         year: 'August 2021',
-        title: 'Augmented/Virtual Reality Research at the Georgia Institute of Technology',
+        title: 'Georgia Tech Research - Augmented/Virtual Reality Web-book',
         duration: '1 semester',
         details: 'Incorporated AR and VR elements into interactive web-based project. \
         Implement 2D/3D elements into a digital book using VUE.js and TypeScript.js. \
         Collaborated with faculty and PhD students weekly to accomplish project goals.'
+    },
+    {
+        year: 'May - August 2021',
+        title: 'Software Engineer (Open Source)- Marta Army LLC',
+        duration: '1 summer',
+        details: "Implemented interactive card in map UI that displays real-time transit information from Marta's catalog using React.js"
     },
     {
         year: 'June 2020',
