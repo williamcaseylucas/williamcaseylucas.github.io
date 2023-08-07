@@ -1,7 +1,7 @@
 {
   "name": "nextjs-portfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.jws",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
