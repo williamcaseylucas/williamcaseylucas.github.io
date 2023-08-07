@@ -100,10 +100,10 @@ const about = () => {
             {/* Stats */}
             <div className="col-span-8 lg:col-span-2 flex lg:flex-col items-center lg:items-end justify-between order-3">
               <div className="flex flex-col items-center lg:items-end justify-center">
-                <span className="inline-block text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold ">
+                <span className="inline-block text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
                   <AnimatedNumbers value={15} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+                <h2 className="text-base lg:text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   technologies learned
                 </h2>
               </div>
@@ -111,7 +111,7 @@ const about = () => {
                 <span className="inline-block text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold ">
                   <AnimatedNumbers value={20} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+                <h2 className="text-base lg:text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   projects completed
                 </h2>
               </div>
@@ -119,7 +119,7 @@ const about = () => {
                 <span className="inline-block text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold ">
                   <AnimatedNumbers value={4} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+                <h2 className="text-base lg:text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   years of experience
                 </h2>
               </div>
