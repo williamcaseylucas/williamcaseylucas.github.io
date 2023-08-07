@@ -27,7 +27,7 @@ export default function Home() {
                 sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 33vw"
               />
             </div>
-            <div className="flex flex-col w-full lg:w-2/3 items-center self-center pl-8 lg:text-center">
+            <div className="flex flex-col w-full lg:w-2/3 items-center self-center lg:pl-8 lg:text-center">
               <AnimatedText
                 text="Welcome to my Portfolio Website!"
                 className="xl:!text-6xl sm:!text-5xl !text-3xl"

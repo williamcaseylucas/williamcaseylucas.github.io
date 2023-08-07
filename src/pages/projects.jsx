@@ -97,7 +97,7 @@ const Project = ({ type, title, summary, img, link, github }) => {
         <p className="my-2 font-medium text-dark dark:text-light">{summary} </p>
         <div className="flex mt-2 items-center w-full justify-between">
           <Link
-            className="text-lg font-semibold underline "
+            className="text-dark dark:text-light text-lg font-semibold underline "
             href={link}
             target="_blank"
           >

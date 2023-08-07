@@ -113,7 +113,8 @@ const Navbar = () => {
               toggle={handleClick}
             /> */}
           </nav>
-          <nav className="flex items-center justify-normal flex-wrap">
+          {/* justify-normal */}
+          <nav className="flex items-center justify-center flex-wrap">
             {/* <motion.a
               className="w-6 mr-3 sm:mx-1"
               whileHover={{ y: -2 }}
@@ -141,6 +142,18 @@ const Navbar = () => {
             >
               <LinkedInIcon />
             </motion.a>
+            <button
+              className={`mx-3 w-6 sm:mx-1 flex items-center justify-center rounded-full 
+          ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
+          `}
+              onClick={() => setMode(mode === "dark" ? "light" : "dark")}
+            >
+              {mode === "dark" ? (
+                <SunIcon className="fill-dark" />
+              ) : (
+                <MoonIcon className="fill-dark" />
+              )}
+            </button>
             {/* <motion.a
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -159,19 +172,6 @@ const Navbar = () => {
             >
               <DribbbleIcon />
             </motion.a> */}
-
-            <button
-              className={`sm:mx-1 flex items-center justify-center rounded-full 
-          ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
-          `}
-              onClick={() => setMode(mode === "dark" ? "light" : "dark")}
-            >
-              {mode === "dark" ? (
-                <SunIcon className="fill-dark" />
-              ) : (
-                <MoonIcon className="fill-dark" />
-              )}
-            </button>
           </nav>
         </motion.div>
       ) : (
