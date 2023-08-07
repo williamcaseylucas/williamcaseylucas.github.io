@@ -161,7 +161,7 @@ const Navbar = () => {
             </motion.a> */}
 
             <button
-              className={`sm:mx-1 flex items-center justify-center rounded-full p-1
+              className={`sm:mx-1 flex items-center justify-center rounded-full 
           ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
           `}
               onClick={() => setMode(mode === "dark" ? "light" : "dark")}

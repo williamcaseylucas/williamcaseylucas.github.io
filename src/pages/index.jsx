@@ -18,7 +18,7 @@ export default function Home() {
       <main className="flex items-center text-dark dark:text-light  w-full min-h-screen ">
         <Layout className="pt-0 md:p-16 sm:pt-8">
           <div className="flex items-center justify-between w-full flex-col lg:flex-row">
-            <div className="w-1/3">
+            <div className="w-full sm:w-1/2 lg:w-1/3">
               <Image
                 src={profilePic}
                 className="h-auto w-full"
@@ -27,7 +27,7 @@ export default function Home() {
                 sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 33vw"
               />
             </div>
-            <div className="flex flex-col w-2/3 items-center self-center pl-8 lg:text-center">
+            <div className="flex flex-col w-full lg:w-2/3 items-center self-center pl-8 lg:text-center">
               <AnimatedText
                 text="Welcome to my Portfolio Website!"
                 className="xl:!text-6xl sm:!text-5xl !text-3xl"
