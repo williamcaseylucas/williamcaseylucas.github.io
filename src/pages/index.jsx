@@ -7,6 +7,7 @@ import Link from "next/link";
 import { LinkArrow } from "@/components/icons";
 import HireMe from "@/components/HireMe";
 import lightBulb from "public/images/svgs/miscellaneous_icons_1.svg";
+import { BsBoxArrowUpRight } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -43,10 +44,9 @@ export default function Home() {
                   href="/Resume-White-Official.pdf"
                   target="_blank"
                 >
+                  {/* <BsBoxArrowUpRight className="w-6 h-6 ml-1 p-1" /> */}
                   Resume
-                  <span>
-                    <LinkArrow className="w-6 h-6 ml-1 p-1" />
-                  </span>
+                  <LinkArrow className="w-5 h-5 ml-1" />
                 </Link>
                 <Link
                   className="ml-4 text-base md:text-lg font-medium capitalize text-dark underline dark:text-light "

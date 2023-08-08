@@ -53,7 +53,7 @@ const Experience = () => {
       <div ref={ref} className="w-full md:w-[90%] lg:w-[75%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          transition={{ duration: 1, type: "spring", damping: 7 }}
+          transition={{ duration: 5, type: "spring", damping: 7 }}
           className="absolute left-[20px] md:left-[30px] lg:left-9 md:w-[4px] top-1 w-[2px]  h-full bg-dark origin-top dark:bg-light"
         />
         <ul className="w-full flex flex-col items-start">
