@@ -14,7 +14,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
-        transition={{ duration: 0.5, type: "spring" }}
+        transition={{ duration: 1, type: "spring", damping: 7 }}
       >
         <h3 className="font-bold capitalize text-2xl">
           {position}&nbsp;
@@ -41,7 +41,7 @@ const Experience = () => {
     target: ref,
     // Start of target to hit end of container
     // center of target element should be aligned with top of viewport
-    offset: ["start end", "center start"],
+    offset: ["start center", "center start"],
   });
   return (
     <div className="my-64">
@@ -53,6 +53,7 @@ const Experience = () => {
       <div ref={ref} className="w-full md:w-[90%] lg:w-[75%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
+          transition={{ duration: 1, type: "spring", damping: 7 }}
           className="absolute left-[20px] md:left-[30px] lg:left-9 md:w-[4px] top-1 w-[2px]  h-full bg-dark origin-top dark:bg-light"
         />
         <ul className="w-full flex flex-col items-start">

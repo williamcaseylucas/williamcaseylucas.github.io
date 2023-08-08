@@ -43,8 +43,7 @@ export default function Home() {
                   href="/Resume-White-Official.pdf"
                   target="_blank"
                 >
-                  {/* <LinkArrow className="w-6 h-6 ml-1 " /> */}
-                  Resume
+                  Resume <LinkArrow className="w-6 h-6 ml-1 p-1" />
                 </Link>
                 <Link
                   className="ml-4 text-base md:text-lg font-medium capitalize text-dark underline dark:text-light "
