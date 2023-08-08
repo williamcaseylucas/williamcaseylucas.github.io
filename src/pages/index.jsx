@@ -19,7 +19,7 @@ export default function Home() {
       <main className="flex items-center text-dark dark:text-light  w-full min-h-screen ">
         <Layout className="pt-2 md:p-16 sm:pt-8">
           <div className="flex items-center justify-between w-full flex-col lg:flex-row">
-            <div className="w-full sm:w-1/2 lg:w-1/3">
+            <div className="w-full mb-4 sm:w-1/2 lg:w-1/3">
               <Image
                 src={profilePic}
                 className="h-auto w-full"
