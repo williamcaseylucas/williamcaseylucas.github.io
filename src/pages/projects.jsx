@@ -137,7 +137,7 @@ const projects = () => {
                 github=""
               />
             </div>
-            <div className="md:col-span-6 col-span-12">
+            <div className="md:col-span-6 col-span-12 mb-10">
               <Project
                 type="Project"
                 title="Machine Learning - Landscape Image Classification"
@@ -147,7 +147,7 @@ const projects = () => {
                 github=""
               />
             </div>
-            <div className="md:col-span-6 col-span-12">
+            <div className="md:col-span-6 col-span-12 mb-10">
               <Project
                 type="Project"
                 title="2D Tower Defense Game"
@@ -159,7 +159,7 @@ const projects = () => {
                 github=""
               />
             </div>
-            <div className="col-span-12">
+            <div className="col-span-12 mb-10">
               <FeaturedProject
                 type="Project"
                 title="Vehicle with Greatest Fuel Economy Report"

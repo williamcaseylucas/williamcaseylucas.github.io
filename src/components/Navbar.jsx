@@ -114,7 +114,7 @@ const Navbar = () => {
             /> */}
           </nav>
           {/* justify-normal */}
-          <nav className="flex items-center justify-center flex-wrap">
+          <nav className="flex items-center justify-center flex-wrap mt-2">
             {/* <motion.a
               className="w-6 mr-3 sm:mx-1"
               whileHover={{ y: -2 }}
