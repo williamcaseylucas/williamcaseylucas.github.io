@@ -38,12 +38,12 @@ export default function Home() {
               </p>
               <div className="flex items-center lg:self-start self-center mt-2 ">
                 <Link
-                  className="flex items-center bg-dark text-light p-2 px-4 text-base md:p-2.5 md:px-6 md:text-lg rounded-lg  font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light  dark:bg-light dark:text-dark "
+                  className="flex items-center justify-center bg-dark text-light p-2 px-4 text-base md:p-2.5 md:px-6 md:text-lg rounded-lg  font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light  dark:bg-light dark:text-dark "
                   // download={true}
                   href="/Resume-White-Official.pdf"
                   target="_blank"
                 >
-                  Resume <LinkArrow className="lg:w-6 ml-1" />
+                  Resume <LinkArrow className="w-6 h-6 ml-1 " />
                 </Link>
                 <Link
                   className="ml-4 text-base md:text-lg font-medium capitalize text-dark underline dark:text-light "
