@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Skill = ({ name, x, y }) => {
   return (
     <motion.div
-      className="flex items-center justify-center rounded-full full-semibold sm:bg-dark sm:text-light text-xs p-2 sm:py-2 sm:px-4 sm:text-sm md:py-1.5 md:px-3 md:text-base lg:py-3 lg:px-6 shadow-dark cursor-pointer absolute sm:dark:text-dark sm:dark:bg-light font-bold text-dark dark:text-white"
+      className="flex items-center justify-center rounded-full full-semibold sm:bg-dark sm:text-light text-xs sm:py-2 sm:px-4 sm:text-sm md:py-1.5 md:px-3 md:text-base lg:py-3 lg:px-6 shadow-dark cursor-pointer absolute sm:dark:text-dark sm:dark:bg-light font-bold text-dark dark:text-white"
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
       whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
@@ -22,7 +22,7 @@ const Skills = () => {
       </h2>
       <div className="w-full h-[50vh] sm:h-[60vh] lg:h-[80vh] relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark sm:bg-circularLight sm:dark:bg-circularDark md:bg-circularLight md:dark:bg-circularDark lg:bg-circularLight lg:dark:bg-circularDark mt-20">
         <motion.div
-          className="flex items-center justify-center rounded-full full-semibold bg-dark text-light p-8 shadow-dark cursor-pointer dark:text-dark dark:bg-light"
+          className="flex items-center justify-center rounded-full full-semibold bg-dark text-light p-2 sm:p-8 shadow-dark cursor-pointer dark:text-dark dark:bg-light"
           whileHover={{ scale: 1.05 }}
         >
           Web
