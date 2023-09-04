@@ -72,27 +72,52 @@ const FeaturedProject = ({
         <span className="text-primary dark:text-primaryDark font-medium text-2xl">
           {type}
         </span>
-        <Link
+        <h2 className="my-2 w-full text-dark dark:text-light text-left text-4xl font-bold underline underline-offset-4">
+          {title}
+        </h2>
+        {/* <Link
           className="hover:underline underline-offset-2"
           href={link}
           target="_blank"
-        >
-          <h2 className="my-2 w-full text-dark dark:text-light text-left text-4xl font-bold ">
-            {title}
-          </h2>
-        </Link>
+        ></Link> */}
         <p className="my-2 font-medium text-dark dark:text-light">{summary} </p>
         <div className="flex mt-2 items-center ">
-          <Link className="w-10" href={github} target="_blank">
-            <GithubIcon className="bg-dark rounded-full" />
-          </Link>
-          <Link
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold  dark:bg-light dark:text-dark hover:dark:border-primaryDark"
-            href={link}
-            target="_blank"
-          >
-            Visit Project
-          </Link>
+          {link !== "" ? (
+            <>
+              {github !== "" ? (
+                <>
+                  <Link className="w-10" href={github} target="_blank">
+                    <GithubIcon className="bg-dark rounded-full" />
+                  </Link>
+                  <Link
+                    className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold  dark:bg-light dark:text-dark hover:dark:border-primaryDark"
+                    href={link}
+                    target="_blank"
+                  >
+                    Visit Project
+                  </Link>
+                </>
+              ) : (
+                <Link
+                  className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold  dark:bg-light dark:text-dark hover:dark:border-primaryDark"
+                  href={link}
+                  target="_blank"
+                >
+                  Visit Project
+                </Link>
+              )}
+            </>
+          ) : (
+            <div
+              onClick={() => {
+                setImages(images);
+                setOpenModal(true);
+              }}
+              className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold  dark:bg-light dark:text-dark hover:dark:border-primaryDark cursor-pointer"
+            >
+              View Project Photos
+            </div>
+          )}
         </div>
       </div>
     </article>
@@ -150,30 +175,53 @@ const Project = ({
           <span className="text-primary dark:text-primaryDark font-medium text-2xl">
             {type}
           </span>
-          <Link
+          <h2 className="my-2 w-full text-dark dark:text-light text-left text-3xl font-bold ">
+            {title}
+          </h2>
+
+          {/* <Link
             className="hover:underline underline-offset-2"
             href={link}
             target="_blank"
-          >
-            <h2 className="my-2 w-full text-dark dark:text-light text-left text-3xl font-bold ">
-              {title}
-            </h2>
-          </Link>
+          ></Link> */}
           <p className="my-2 font-medium text-dark dark:text-light">
             {summary}{" "}
           </p>
         </div>
         <div className="flex mt-2 items-center w-full justify-between">
-          <Link
-            className="text-dark dark:text-light text-lg font-semibold underline "
-            href={link}
-            target="_blank"
-          >
-            Visit
-          </Link>
-          <Link className="w-8" href={github} target="_blank">
-            <GithubIcon className="bg-dark rounded-full" />
-          </Link>
+          {link !== "" ? (
+            <Link
+              className="text-dark dark:text-light text-lg font-semibold underline"
+              href={link}
+              target="_blank"
+            >
+              Visit
+            </Link>
+          ) : (
+            <>
+              {images ? (
+                <div
+                  className="text-dark dark:text-light text-lg font-semibold underline cursor-pointer"
+                  onClick={() => {
+                    setImages(images);
+                    setOpenModal(true);
+                  }}
+                >
+                  View Images
+                </div>
+              ) : (
+                <div></div>
+              )}
+            </>
+          )}
+
+          {github !== "" ? (
+            <Link className="w-8" href={github} target="_blank">
+              <GithubIcon className="bg-dark rounded-full" />
+            </Link>
+          ) : (
+            <div></div>
+          )}
         </div>
       </div>
     </article>
@@ -213,7 +261,7 @@ const Carousel = ({ setOpenModal, images }) => {
         >
           X
         </p>
-        <div className="fixed top-1/2 left-[18px] cursor-pointer hidden group-hover:flex bg-blue-500 w-6 h-6 rounded-lg  items-center justify-center">
+        <div className="fixed top-1/2 left-[18px] cursor-pointer hidden group-hover:flex  bg-blue-500 w-6 h-6 rounded-lg  items-center justify-center">
           <AiOutlineLeft onClick={prevSlide} size={24} />
         </div>
         <div className="fixed top-1/2 right-[18px] cursor-pointer hidden group-hover:flex bg-blue-500 w-6 h-6 rounded-lg  items-center justify-center">
@@ -269,8 +317,8 @@ const projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 type="Featured Project"
-                title="Attendance Tracker - Full Stack"
-                summary="FILL IN"
+                title="Attendance Tracker - Full Stack (FARM)"
+                summary="This app was developed as a means of logging the attendance of 50+ students in Georgia Tech's VIP Environmental Flights lab (which focuses on drone-based solutions). This app utilizes NextJS, Typescript, moment.js, and NextAuth in the frontend, and FastAPI with websockets and MongoDB through PyMongo. Only users who are on an email list can view the app. When the user logs in, they can either add students manually or import a csv with a 'name' and 'email' column to import many students at once. The client can also download a csv of the current attendance log of the students with a click of a button and they have a refresh button to resync with the backend. Once the client clicks 'create session', the client's location is passed to the data base as the center of origin and a qr code is displayed for others to login. Once others scan the qr code, allow their location to be logged (they have to be within a mile of the client's location), and they enter a valid email that exists in the database, the students attendance goes up by 1 and a little circle appears on the client's end using websockets to indicate realtime logged students. Once the client clicks 'close session', every student who didn't submit their email address within the last hour of the session being created are marked as absent automatically."
                 img={attendance_tracker[1]}
                 link=""
                 github=""
@@ -283,11 +331,11 @@ const projects = () => {
             <div className="md:col-span-6 col-span-12 mb-10">
               <Project
                 type="Project"
-                title="Study Notes App"
-                summary="FILL IN"
+                title="Study Notes App - Full Stack (React + Django + jsonServer)"
+                summary="The study notes app is a full stack application intended to mimick the notes app on the iPhone. The user can create a new note, update a note, and delete a note. The app was first constructed using JSON server to simulate an api, and then it was converted to utilizing Django REST framework with CORS properties and a MVC template. This app also took advantage of a Makefile, which allowed me to run custom commands to make migrations and run the database's server."
                 img={djangoNotesImages[5]}
                 link=""
-                github=""
+                github="https://github.com/williamcaseylucas/django-react-studynotes/tree/main"
                 setOpenModal={setOpenModal}
                 setImages={setImages}
                 images={djangoNotesImages}
@@ -297,11 +345,11 @@ const projects = () => {
             <div className="md:col-span-6 col-span-12 mb-10">
               <Project
                 type="Project"
-                title="Expense Tracker App"
-                summary="FILL IN"
+                title="Expense Tracker App - Full Stack (NextJS, TypeScript, Firebase)"
+                summary="This app was written in NextJS with TypeScript and ESLint for the frontend and utilized Firebase for the backend. The expense tracker could add new values, delete old values, and would display a running total on the bottom. "
                 img={expenseTrackerFirebase[1]}
                 link=""
-                github=""
+                github="https://github.com/williamcaseylucas/expense_tracker_firebase"
                 setOpenModal={setOpenModal}
                 setImages={setImages}
                 images={expenseTrackerFirebase}
@@ -311,8 +359,8 @@ const projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 type="Featured Project"
-                title="Admin Dashboard - Kyndryl Internship"
-                summary="FILL IN"
+                title="Admin Dashboard - Kyndryl Internship - Full Stack (Nextjs, Redux, Redux Query, Azure Functions, Azure Pipeline CI/CD)"
+                summary="CloudCents is a SAAS solution that takes credentials for a company's Azure subscription and runs diagnostics on the usage of the most expensive resources in Azure (virtual machines, bastions, storage, app services, application gateways). During this process, Azure functions are filtering through the Azure API and are sending a new JSON object to the frontend so that relevant information can be parsed efficiently. This project made use of NextJS, Redux and Redux Query for state management and cacheing API calls, and allowed the user to add a subscription, select it as the one to view diagnostics on, view general statistics from the overview page, and then click into a specific resource from the table to see why the resource should be modified. The client can also implement these suggesstions by clicking into a resource and clicking the button 'scale up', 'scale down', 'start', or 'stop'. If Kyndryl were to implement all of the suggestions made via this application, the company would drive down Azure costs by 72%. "
                 img={cloudCents[6]}
                 link=""
                 github=""
@@ -325,11 +373,11 @@ const projects = () => {
             <div className="md:col-span-6 col-span-12 mb-10">
               <Project
                 type="Project"
-                title="Memories App"
-                summary="FILL IN"
+                title="Memories App - Full Stack (MERN)"
+                summary="This project utilizes ReactJS and Redux on the frontend, and MongoDB through Express.js, Node.js, and Mongoose on the backend. This app allows the user to submit memories with an image attached that then displays on the side panel with an indication of how long ago the submission was made using Javascipts Date class."
                 img={memoriesImages[2]}
                 link=""
-                github=""
+                github="https://github.com/williamcaseylucas/memories-full-stack"
                 setOpenModal={setOpenModal}
                 setImages={setImages}
                 images={memoriesImages}
@@ -339,11 +387,11 @@ const projects = () => {
             <div className="md:col-span-6 col-span-12 mb-10">
               <Project
                 type="Project"
-                title="Django - Realtor Site"
-                summary="FILL IN"
+                title="Realtor Site - (HTML, CSS, Bootstrap, Django)"
+                summary="This application renders specific html components using Django on the frontend, and then stores realtors and listings via PostgreSQL and Django-REST Framework in the backend. During development, I created a Docker container to hold the PostgreSQL database and PGAdmin for visualization within the docker container."
                 img={djangoRealtorImages[0]}
                 link=""
-                github=""
+                github="https://github.com/williamcaseylucas/realtor-website-django"
                 setOpenModal={setOpenModal}
                 setImages={setImages}
                 images={djangoRealtorImages}
