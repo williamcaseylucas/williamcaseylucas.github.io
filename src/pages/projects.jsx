@@ -4,10 +4,6 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/icons";
-import deepLearningProject from "public/images/projects/deep-learning.jpg";
-import fuelEconomyProject from "public/images/projects/Fuel-Economy.jpg";
-import machineLearningProject from "public/images/projects/machine-learning-project.png";
-import towerDefenseProject from "public/images/projects/tower-defense.png";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
@@ -20,6 +16,12 @@ import {
   attendance_tracker,
   cloudCents,
 } from "../../public/images/projects/carousel";
+// Standard image imports
+import deepLearningProject from "public/images/projects/deep-learning.jpg";
+import fuelEconomyProject from "public/images/projects/Fuel-Economy.jpg";
+import machineLearningProject from "public/images/projects/machine-learning-project.png";
+import towerDefenseProject from "public/images/projects/tower-defense.png";
+import prophet_stock_prediction from "public/images/projects/ml/streamlit_stock_prediction_prophet.png";
 
 const FramerImage = motion(Image);
 const FeaturedProject = ({
@@ -325,6 +327,17 @@ const projects = () => {
                 setOpenModal={setOpenModal}
                 setImages={setImages}
                 images={attendance_tracker}
+              />
+            </div>
+            {/* Streamlit app prophet */}
+            <div className="md:col-span-6 col-span-12 mb-10">
+              <Project
+                type="Project"
+                title="Stock Price Prediction using Prophet ML, Streamlit, and Plotly"
+                summary="This app makes stock predictions on Apple, Google, Microsoft, and Gamestop and lets the user determine how far out predictions should be made. It visualizes time series data from when the stock opened and closed from Yahoo Finance and then uses Facebook's Prophet model to make a prediction on the stock data and then displays the forecast data and components of the prediction."
+                img={prophet_stock_prediction}
+                link="https://stockforecastappappprophet-eemu7z2kokemct3psm9zg7.streamlit.app/"
+                github="https://github.com/williamcaseylucas/stock_forecast_app_streamlit_prophet"
               />
             </div>
             {/* Study notes App */}
