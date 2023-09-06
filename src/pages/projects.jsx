@@ -22,6 +22,7 @@ import fuelEconomyProject from "public/images/projects/Fuel-Economy.jpg";
 import machineLearningProject from "public/images/projects/machine-learning-project.png";
 import towerDefenseProject from "public/images/projects/tower-defense.png";
 import prophet_stock_prediction from "public/images/projects/ml/streamlit_stock_prediction_prophet.png";
+import sklearn_streamlit_visualizer from "public/images/projects/ml/sklearn_streamlit_visualizer.png";
 
 const FramerImage = motion(Image);
 const FeaturedProject = ({
@@ -329,6 +330,17 @@ const projects = () => {
                 images={attendance_tracker}
               />
             </div>
+            {/* Streamlit app Sklearn */}
+            <div className="md:col-span-6 col-span-12 mb-10">
+              <Project
+                type="Project"
+                title="Machine Learning Visualizer"
+                summary="This web app makes use of KMeans, SVM, Random Forest, and Decision Tree models on the iris, breast cancer, wine, and diabetes datasets. The user can select from various parameters on the side panel, and visualize what contributes to the accuracy score shown. In addition, the user can see the shape of the dataset, the number of classes in the dataset, and can filter how decision trees are displayed by varying column amounts."
+                img={sklearn_streamlit_visualizer}
+                link="https://appscikitlearnbasic.streamlit.app/"
+                github="https://github.com/williamcaseylucas/streamlit_scikit_learn_basic"
+              />
+            </div>
             {/* Streamlit app prophet */}
             <div className="md:col-span-6 col-span-12 mb-10">
               <Project
@@ -336,7 +348,7 @@ const projects = () => {
                 title="Stock Price Prediction using Prophet ML, Streamlit, and Plotly"
                 summary="This app makes stock predictions on Apple, Google, Microsoft, and Gamestop and lets the user determine how far out predictions should be made. It visualizes time series data from when the stock opened and closed from Yahoo Finance and then uses Facebook's Prophet model to make a prediction on the stock data and then displays the forecast data and components of the prediction."
                 img={prophet_stock_prediction}
-                link="https://stockforecastappappprophet-eemu7z2kokemct3psm9zg7.streamlit.app/"
+                link="https://stockforecastappappprophet.streamlit.app/"
                 github="https://github.com/williamcaseylucas/stock_forecast_app_streamlit_prophet"
               />
             </div>
