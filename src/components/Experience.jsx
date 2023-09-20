@@ -63,7 +63,7 @@ const Experience = () => {
             company="Kyndryl"
             time="Summer 2023"
             address="Austin TX"
-            work="Developed a counter app using Terraform to provision an EC2 instance, API Gateway, Lambda function, IAM rules, and CloudWatch logs in the cloud. I connected it with GCP's BigQuery and Dockerized a self-hosted runner for Github Actions. This demonstrated cloud hybrid solutions for implementing full stack web applications with a CI/CD pipeline. \
+            work="I developed a full-stack web application using Azure functions, Next.js, and Redux to drive down costs in cloud infrastructure by 72% through recommendations with actionable buttons that changed infrastructure on the cloud real-time using the Azure API. I also developed a counter app using Terraform to provision an EC2 instance, API Gateway, Lambda function, IAM rules, and CloudWatch logs in the cloud. Then, this was connected with GCP's BigQuery and wrapped in a Dockerized self-hosted runner for Github Actions. This demonstrated cloud hybrid solutions for implementing full stack web applications using a CI/CD pipeline. \
   Presented a presentation on API Gateway equivalents across major cloud providers listing cost, feature, and use-case differences to employees in the Cloud division."
           />
           <Details
