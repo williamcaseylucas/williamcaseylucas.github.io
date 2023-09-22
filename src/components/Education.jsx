@@ -48,19 +48,19 @@ const Education = () => {
         <ul className="w-full flex flex-col items-start">
           <Details
             type="Masters of Science in Computer Science"
-            time="2023 - 2024"
+            time="Fall 2024"
             place="the Georgia Institute of Technology"
             info="Computer Vision | Natural Language Processing | Artificial Intelligence | Neural Networks | CreateX "
           />
           <Details
             type="Bachelor of Science in Computer Science"
-            time="2021 - 2023"
+            time="Fall 2023"
             place="the Georgia Institute of Technology"
             info="Machine Learning | Deep Learning | AI | Java | JavaFX | C | Assembly Code for the LC3 Microprocessor | Drone Robotics | Computer Graphics | Computer Animation | "
           />
           <Details
             type="Diploma"
-            time="2014 - 2019"
+            time="Spring 2019"
             place="Thomas Stone Highschool"
             info="Valedictorian (Class Rank #1) | Suma Cum Laude | Gave speech to over 1000 people at Graduation"
           />
