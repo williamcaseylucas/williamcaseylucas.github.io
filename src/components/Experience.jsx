@@ -71,10 +71,7 @@ const Experience = () => {
             company="the Georgia Institute of Technology"
             time="Jan 2023 - Present"
             address="Atlanta GA"
-            work="Explain and demonstrate methods for implementing and applying Machine Learning (ML) concepts and models to data. \
-  Review students ML projects and provide constructive feedback. \
-  Host online office hours weekly. \
-  Assist students through mega threads using edstem."
+            work="In my role as a Machine Learning TA, I have to explain and demonstrate methods for implementing and applying Machine Learning (ML) concepts and models to data; reviewed students ML projects and provide constructive feedback; host online office hours weekly; and assist students through mega threads using edstem."
           />
           <Details
             position="Georgia Tech Research - Vertically Integrated Project – Experimental Flights"
@@ -82,7 +79,7 @@ const Experience = () => {
             company="the Georgia Institute of Technology"
             time="Fall 2022 - Fall 2023"
             address="Atlanta GA"
-            work="Contributed to the development of a drone delivery system for the delivery of small packages on the Georgia Tech campus as part of a Vertically Integrated Project (VIP) on Experimental Flights."
+            work="In this research group, I led a team of 15+ students in creating a full stack SAAS application that managed real-time drone flight information in the backend through a custom Admin dashboard for an inventory management system."
           />
           <Details
             position="Teaching Assistant for CS 1331 Intro to Object Oriented Programming'"
@@ -90,11 +87,7 @@ const Experience = () => {
             company="the Georgia Institute of Technology"
             time="Spring 2022"
             address="Atlanta GA"
-            work="Thoroughly explained and clarified how to conceptualize object-oriented concepts/principles for CS 1331 students – Intro to Object Oriented Programming. \
-  Wrote custom tests using Junit and Reflection API to autograde HW assignments. \
-  Graded HW assignments and tests weekly and monthly, respectively. \
-  Held in-person office hours and online office hours weekly. \
-  Answered questions raised on Piazza.."
+            work="As a Intro to Object Oriented Programming TA, I thoroughly explained and clarified how to conceptualize object-oriented concepts/principles for CS 1331 students; wrote custom tests using Junit and Reflection API to autograde HW assignments; graded HW assignments and tests weekly and monthly, respectively; held in-person office hours and online office hours weekly; and answered questions raised on Piazza.."
           />
           <Details
             position="Georgia Tech Research - Augmented/Virtual Reality Web-book"
@@ -102,9 +95,7 @@ const Experience = () => {
             company="the Georgia Institute of Technology"
             time="Fall 2021"
             address="Atlanta GA"
-            work="Incorporated AR and VR elements into interactive web-based project. \
-  Implement 2D/3D elements into a digital book using VUE.js and TypeScript.js. \
-  Collaborated with faculty and PhD students weekly to accomplish project goals."
+            work="I incorporated Augmented Reality and Virtual Reality elements into an interactive web-based project for the book Reality Media -- which is featured in the MIT Press). I implement 2D/3D elements into a digital book using VUE.js and TypeScript.js and collaborated with faculty and PhD students weekly to accomplish project goals in an agile fashion."
           />
           <Details
             position="Software Engineer (Open Source)- Marta Army LLC"
