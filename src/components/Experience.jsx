@@ -87,7 +87,7 @@ const Experience = () => {
             company="the Georgia Institute of Technology"
             time="Spring 2022"
             address="Atlanta GA"
-            work="As a Intro to Object Oriented Programming TA, I thoroughly explained and clarified how to conceptualize object-oriented concepts/principles for CS 1331 students; wrote custom tests using Junit and Reflection API to autograde HW assignments; graded HW assignments and tests weekly and monthly, respectively; held in-person office hours and online office hours weekly; and answered questions raised on Piazza.."
+            work="As a Intro to Object Oriented Programming TA, I thoroughly explained and clarified how to conceptualize object-oriented concepts/principles for CS 1331 students; wrote custom tests using Junit and Reflection API to autograde HW assignments; graded HW assignments and tests weekly and monthly, respectively; held in-person office hours and online office hours weekly; and answered questions raised on Piazza."
           />
           <Details
             position="Georgia Tech Research - Augmented/Virtual Reality Web-book"
