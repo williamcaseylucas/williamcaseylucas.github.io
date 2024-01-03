@@ -15,6 +15,8 @@ import {
   expenseTrackerFirebase,
   attendance_tracker,
   cloudCents,
+  trelloImages,
+  digitalhippoImages,
 } from "../../public/images/projects/carousel";
 // Standard image imports
 import deepLearningProject from "public/images/projects/deep-learning.jpg";
@@ -316,6 +318,34 @@ const projects = () => {
           />
           {/* Projects */}
           <div className="grid grid-cols-12 lg:gap-24 lg:gap-y-32 lg:gap-x-8 md:gap-y-24 gap-x-0">
+            {/* Digital Hippo Marketplace */}
+            <div className="md:col-span-6 col-span-12 mb-10">
+              <Project
+                type="Project"
+                title="Digital Hippo Marketplace"
+                summary=""
+                setOpenModal={setOpenModal}
+                setImages={setImages}
+                images={digitalhippoImages}
+                img={digitalhippoImages[6]}
+                github=""
+                link=""
+              />
+            </div>
+            {/* Trello Clone */}
+            <div className="md:col-span-6 col-span-12 mb-10">
+              <Project
+                type="Project"
+                title="Trello Clone"
+                summary=""
+                setOpenModal={setOpenModal}
+                setImages={setImages}
+                images={trelloImages}
+                img={trelloImages[2]}
+                github=""
+                link=""
+              />
+            </div>
             {/* Featured Attendance Tracker */}
             <div className="col-span-12">
               <FeaturedProject

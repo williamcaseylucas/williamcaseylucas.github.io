@@ -16,6 +16,58 @@ import django_home from "./django_realtor/django_home.png";
 
 export const djangoRealtorImages = [django_listings, django_about, django_home];
 
+import trello_image_1 from "./trello clone screenshots/1";
+import trello_image_2 from "./trello clone screenshots/2";
+import trello_image_3 from "./trello clone screenshots/3";
+import trello_image_4 from "./trello clone screenshots/4";
+import trello_image_5 from "./trello clone screenshots/5";
+import trello_image_6 from "./trello clone screenshots/6";
+import trello_image_7 from "./trello clone screenshots/7";
+// Trello clone
+export const trelloImages = [
+  trello_image_1,
+  trello_image_2,
+  trello_image_3,
+  trello_image_4,
+  trello_image_5,
+  trello_image_6,
+  trello_image_7,
+];
+
+import digital_image_1 from "./digital hippo screenshots/1";
+import digital_image_2 from "./digital hippo screenshots/2";
+import digital_image_3 from "./digital hippo screenshots/3";
+import digital_image_4 from "./digital hippo screenshots/4";
+import digital_image_5 from "./digital hippo screenshots/5";
+import digital_image_6 from "./digital hippo screenshots/6";
+import digital_image_7 from "./digital hippo screenshots/7";
+import digital_image_8 from "./digital hippo screenshots/8";
+import digital_image_9 from "./digital hippo screenshots/9";
+import digital_image_10 from "./digital hippo screenshots/10";
+import digital_image_11 from "./digital hippo screenshots/11";
+import digital_image_12 from "./digital hippo screenshots/12";
+import digital_image_13 from "./digital hippo screenshots/13";
+import digital_image_14 from "./digital hippo screenshots/14";
+import digital_image_15 from "./digital hippo screenshots/15";
+// Digital hippo
+export const digitalhippoImages = [
+  digital_image_1,
+  digital_image_2,
+  digital_image_3,
+  digital_image_4,
+  digital_image_5,
+  digital_image_6,
+  digital_image_7,
+  digital_image_8,
+  digital_image_9,
+  digital_image_10,
+  digital_image_11,
+  digital_image_12,
+  digital_image_13,
+  digital_image_14,
+  digital_image_15,
+];
+
 // Kyndryl
 
 // Django - Notes
