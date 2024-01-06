@@ -316,7 +316,7 @@ const projects = () => {
               } else {
                 return (
                   <div key={idx} className="col-span-12">
-                    {item.modal ? (
+                    {item.images != null ? (
                       <FeaturedProject
                         {...item}
                         setOpenModal={setOpenModal}
