@@ -41,7 +41,8 @@ export const project_config = [
   {
     type: "Project",
     title: "GT Course Tracker",
-    summary: "",
+    summary:
+      "For this project, I wrote a python script that used BeautifulSoup to scrape Georgia Tech's course registration page to identify what the current wait list was for given courses I was interested in taking. I then created a CRON job using a github actions CI/CD pipeline that ran every 15 minutes that continued to scrape this webpage, and if it found that there were seats available for one of my desired courses, I would recieve an email. This was accomplished by creating a basic smtp server that logged in through one of my gmail accounts using github secret variables and the os module in python.",
     images: null,
     img: gtCourseTrackerImages[0],
     github: "",
