@@ -69,6 +69,10 @@ export const digitalhippoImages = [
   digital_image_15,
 ];
 
+// course tracker
+import gt_course_tracker from "./gt_course_tracker/gt_course_tracker_1.png";
+export const gtCourseTrackerImages = [gt_course_tracker];
+
 // Kyndryl
 
 // Django - Notes
