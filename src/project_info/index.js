@@ -18,8 +18,18 @@ import machineLearningProject from "public/images/projects/machine-learning-proj
 import towerDefenseProject from "public/images/projects/tower-defense.png";
 import prophet_stock_prediction from "public/images/projects/ml/streamlit_stock_prediction_prophet.png";
 import sklearn_streamlit_visualizer from "public/images/projects/ml/sklearn_streamlit_visualizer.png";
+import rate_my_professor_io from "public/images/projects/carousel/rate_my_professor_io/RMP_IO.png";
 
 export const project_config = [
+  {
+    type: "Project",
+    title: "RateMyProfessorIO",
+    summary: "",
+    images: rate_my_professor_io,
+    img: rate_my_professor_io,
+    github: "",
+    link: "https://williamcaseylucas.github.io/ratemyprofessorio-site/",
+  },
   {
     type: "Project",
     title: "Digital Hippo Marketplace",
