@@ -290,7 +290,7 @@ const projects = () => {
         <meta name="description" content="any description" />
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center">
-        <Layout className="pt-16 max-w-[1850px] mx-auto ">
+        <Layout className="pt-16 max-w-[1850px] mx-auto">
           {openModal && <Modal setOpenModal={setOpenModal} images={images} />}
           <AnimatedText
             text="Current Projects"

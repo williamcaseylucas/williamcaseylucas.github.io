@@ -42,7 +42,7 @@ const about = () => {
         <meta name="description" content="Any description" />
       </Head>
       <main className="flex w-full flex-col items-center justify-center text-dark dark:text-light">
-        <Layout className="pt-16">
+        <Layout className="pt-16 max-w-[1850px] mx-auto">
           <AnimatedText
             text="Here's a little bit about me!"
             className="lg:!text-7xl sm:!text-6xl !text-4xl mb-8 sm:mb-16"
