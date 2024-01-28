@@ -11,6 +11,11 @@ import {
   gtCourseTrackerImages,
 } from "../../public/images/projects/carousel";
 
+const Project = {
+  PROJECT: "Project",
+  FEATURED: "Featured Project",
+};
+
 // Standard image imports
 import deepLearningProject from "public/images/projects/deep-learning.jpg";
 import fuelEconomyProject from "public/images/projects/Fuel-Economy.jpg";
@@ -19,10 +24,21 @@ import towerDefenseProject from "public/images/projects/tower-defense.png";
 import prophet_stock_prediction from "public/images/projects/ml/streamlit_stock_prediction_prophet.png";
 import sklearn_streamlit_visualizer from "public/images/projects/ml/sklearn_streamlit_visualizer.png";
 import rate_my_professor_io from "public/images/projects/carousel/rate_my_professor_io/RMP_IO.png";
+import cs7450hw1 from "public/images/projects/carousel/cs7450-hw1/cs-7450-hw1.png";
 
 export const project_config = [
   {
-    type: "Project",
+    type: Project.PROJECT,
+    title: "Recreate Syllabus",
+    summary:
+      "In this project, I recreated the syllabus for my Information Visualization class at Georgia Tech using Svelte Kit and Css and rendered out information using an imported csv file.",
+    images: cs7450hw1,
+    img: cs7450hw1,
+    github: "",
+    link: "https://williamcaseylucas.github.io/cs7450-hw/",
+  },
+  {
+    type: Project.PROJECT,
     title: "RateMyProfessorIO",
     summary: "",
     images: rate_my_professor_io,
@@ -31,7 +47,7 @@ export const project_config = [
     link: "https://williamcaseylucas.github.io/ratemyprofessorio-site/",
   },
   {
-    type: "Project",
+    type: Project.FEATURED,
     title: "Digital Hippo Marketplace",
     summary: "",
     images: digitalhippoImages,
@@ -40,7 +56,7 @@ export const project_config = [
     link: "",
   },
   {
-    type: "Project",
+    type: Project.PROJECT,
     title: "Trello Clone",
     summary: "",
     images: trelloImages,
@@ -49,7 +65,7 @@ export const project_config = [
     link: "",
   },
   {
-    type: "Project",
+    type: Project.PROJECT,
     title: "GT Course Tracker",
     summary:
       "For this project, I wrote a python script that used BeautifulSoup to scrape Georgia Tech's course registration page to identify what the current wait list was for given courses I was interested in taking. I then created a CRON job using a github actions CI/CD pipeline that ran every 15 minutes that continued to scrape this webpage, and if it found that there were seats available for one of my desired courses, I would recieve an email. This was accomplished by creating a basic smtp server that logged in through one of my gmail accounts using github secret variables and the os module in python.",
@@ -59,7 +75,7 @@ export const project_config = [
     link: "",
   },
   {
-    type: "Featured Project",
+    type: Project.FEATURED,
     title: "Attendance Tracker - Full Stack (FARM)",
     summary:
       "This app was developed as a means of logging the attendance of 50+ students in Georgia Tech's VIP Environmental Flights lab (which focuses on drone-based solutions). This app utilizes NextJS, Typescript, moment.js, and NextAuth in the frontend, and FastAPI with websockets and MongoDB through PyMongo. Only users who are on an email list can view the app. When the user logs in, they can either add students manually or import a csv with a 'name' and 'email' column to import many students at once. The client can also download a csv of the current attendance log of the students with a click of a button and they have a refresh button to resync with the backend. Once the client clicks 'create session', the client's location is passed to the data base as the center of origin and a qr code is displayed for others to login. Once others scan the qr code, allow their location to be logged (they have to be within a mile of the client's location), and they enter a valid email that exists in the database, the students attendance goes up by 1 and a little circle appears on the client's end using websockets to indicate realtime logged students. Once the client clicks 'close session', every student who didn't submit their email address within the last hour of the session being created are marked as absent automatically.",
@@ -69,7 +85,7 @@ export const project_config = [
     link: "",
   },
   {
-    type: "Project",
+    type: Project.PROJECT,
     title: "Machine Learning Visualizer",
     summary:
       "This web app makes use of KMeans, SVM, Random Forest, and Decision Tree models on the iris, breast cancer, wine, and diabetes datasets. The user can select from various parameters on the side panel, and visualize what contributes to the accuracy score shown. In addition, the user can see the shape of the dataset, the number of classes in the dataset, and can filter how decision trees are displayed by varying column amounts.",
@@ -79,7 +95,7 @@ export const project_config = [
     link: "https://appscikitlearnbasic.streamlit.app/",
   },
   {
-    type: "Project",
+    type: Project.PROJECT,
     title: "Stock Price Prediction using Prophet ML, Streamlit, and Plotly",
     summary:
       "This app makes stock predictions on Apple, Google, Microsoft, and Gamestop and lets the user determine how far out predictions should be made. It visualizes time series data from when the stock opened and closed from Yahoo Finance and then uses Facebook's Prophet model to make a prediction on the stock data and then displays the forecast data and components of the prediction.",
@@ -90,7 +106,7 @@ export const project_config = [
     link: "https://stockforecastappappprophet.streamlit.app/",
   },
   {
-    type: "Project",
+    type: Project.PROJECT,
     title: "Study Notes App - Full Stack (React + Django + jsonServer",
     summary:
       "The study notes app is a full stack application intended to mimick the notes app on the iPhone. The user can create a new note, update a note, and delete a note. The app was first constructed using JSON server to simulate an api, and then it was converted to utilizing Django REST framework with CORS properties and a MVC template. This app also took advantage of a Makefile, which allowed me to run custom commands to make migrations and run the database's server.",
@@ -101,7 +117,7 @@ export const project_config = [
     link: "",
   },
   {
-    type: "Project",
+    type: Project.PROJECT,
     title: "Expense Tracker App - Full Stack (NextJS, TypeScript, Firebase)",
     summary:
       "This app was written in NextJS with TypeScript and ESLint for the frontend and utilized Firebase for the backend. The expense tracker could add new values, delete old values, and would display a running total on the bottom.",
@@ -111,7 +127,7 @@ export const project_config = [
     link: "",
   },
   {
-    type: "Featured Project",
+    type: Project.FEATURED,
     title:
       "Admin Dashboard - Kyndryl Internship - Full Stack (Nextjs, Redux, Redux Query, Azure Functions, Azure Pipeline CI/CD)",
     summary:
@@ -122,7 +138,7 @@ export const project_config = [
     link: "",
   },
   {
-    type: "Project",
+    type: Project.PROJECT,
     title: "Memories App - Full Stack (MERN)",
     summary:
       "This project utilizes ReactJS and Redux on the frontend, and MongoDB through Express.js, Node.js, and Mongoose on the backend. This app allows the user to submit memories with an image attached that then displays on the side panel with an indication of how long ago the submission was made using Javascipts Date class.",
@@ -132,7 +148,7 @@ export const project_config = [
     link: "",
   },
   {
-    type: "Project",
+    type: Project.PROJECT,
     title: "Realtor Site - (HTML, CSS, Bootstrap, Django)",
     summary:
       "This application renders specific html components using Django on the frontend, and then stores realtors and listings via PostgreSQL and Django-REST Framework in the backend. During development, I created a Docker container to hold the PostgreSQL database and PGAdmin for visualization within the docker container.",
@@ -142,7 +158,7 @@ export const project_config = [
     link: "",
   },
   {
-    type: "Featured Project",
+    type: Project.FEATURED,
     title: "Deep Learning - Predict if Brain Tumor is Benign or Malignant",
     summary:
       "Developed deep learning models that accurately detected brain tumors by identifying abnormalities and diseases in MRI scans from patients with nearly 80% accuracy. (RNN, CNN, Attention, Decision Trees)",
@@ -152,7 +168,7 @@ export const project_config = [
     link: "https://drive.google.com/file/d/1L2Q5HMXMFAHfp5cqngXX9j0g0YO0UeQi/view",
   },
   {
-    type: "Project",
+    type: Project.PROJECT,
     title: "Machine Learning - Landscape Image Classification",
     summary:
       "Preprocessed 4,000 images and applied unsupervised and supervised techniques to achieve an accuracy of 70% (KMeans, Gaussian Mixture Model, DB-Scan, Silhouette Coefficient, Calinski Score)",
@@ -162,7 +178,7 @@ export const project_config = [
     link: "https://www.youtube.com/watch?v=rz7OoKlQDd8",
   },
   {
-    type: "Project",
+    type: Project.PROJECT,
     title: "2D Tower Defense Game",
     summary:
       "Led the development of a 2D 'Tower Defense' game using SceneBuilder, Agile/Scrum methodologies, and Design Patterns like Singleton and Factory Method (Java,  JavaFX, JUnits)",
@@ -172,7 +188,7 @@ export const project_config = [
     link: "https://www.youtube.com/watch?v=fEl2JX4xtHE",
   },
   {
-    type: "Featured Project",
+    type: Project.FEATURED,
     title: "Vehicle with Greatest Fuel Economy Report",
     summary:
       "Collaborated with team to create statistical models that determined the most fuel-efficient vehicle using multivariable analyses (R)",

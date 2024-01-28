@@ -49,7 +49,7 @@ const FeaturedProject = ({
             transition={{ duration: 0.2 }}
             src={img}
             alt={title}
-            className="w-full max-h-[400px] object-top object-cover"
+            className="object-scale-down w-full max-h-[400px]  object-top object-cover"
             priority
             sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw"
           />
@@ -290,7 +290,7 @@ const projects = () => {
         <meta name="description" content="any description" />
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center">
-        <Layout className="pt-16">
+        <Layout className="pt-16 max-w-[1850px] mx-auto ">
           {openModal && <Modal setOpenModal={setOpenModal} images={images} />}
           <AnimatedText
             text="Current Projects"
