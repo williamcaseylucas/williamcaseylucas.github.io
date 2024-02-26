@@ -35,7 +35,7 @@ export const project_config = [
     images: cs7450hw1,
     img: cs7450hw1,
     github: "",
-    link: "https://williamcaseylucas.github.io/cs7450-hw/",
+    link: "https://williamcaseylucas.github.io/cs7450-hw1-live-demo/",
   },
   {
     type: Project.PROJECT,
