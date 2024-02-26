@@ -109,6 +109,7 @@ import at_qr_websocket from "./attendance_tracker/at_qr_websocket.png";
 import at_qr_student_init from "./attendance_tracker/at_qr_student_init.png";
 import at_qr_student_mid from "./attendance_tracker/at_qr_student_mid.png";
 import at_qr_student_final from "./attendance_tracker/at_qr_student_final.png";
+import at_real_example from "./attendance_tracker/real_example.JPG";
 
 export const attendance_tracker = [
   at_login,
@@ -121,6 +122,7 @@ export const attendance_tracker = [
   at_qr_student_mid,
   at_qr_student_final,
   at_qr_websocket,
+  at_real_example,
 ];
 
 // kyndryl cloud cents
