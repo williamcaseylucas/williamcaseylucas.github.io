@@ -9,6 +9,7 @@ import {
   PinterestIcon,
   SunIcon,
   MoonIcon,
+  PythonIcon,
 } from "./icons";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
@@ -142,6 +143,7 @@ const Navbar = () => {
             >
               <LinkedInIcon />
             </motion.a>
+
             <button
               className={`mx-3 w-6 sm:mx-1 flex items-center justify-center rounded-full 
           ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
@@ -215,6 +217,7 @@ const Navbar = () => {
           >
             <LinkedInIcon />
           </motion.a>
+
           {/* <motion.a
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}

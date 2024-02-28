@@ -3,7 +3,12 @@ import Head from "next/head";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
-import { GithubIcon } from "@/components/icons";
+import {
+  GithubIcon,
+  LinkedInIcon,
+  PythonIcon,
+  SvelteIcon,
+} from "@/components/icons";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
@@ -122,6 +127,7 @@ const Project = ({
   setOpenModal = null,
   setImages = null,
   images = null,
+  icons = null,
 }) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light mb-10 h-full">
@@ -178,6 +184,16 @@ const Project = ({
             {summary}{" "}
           </p>
         </div>
+        {icons && (
+          <div className="flex mt-2 items-center w-full justify-between">
+            {icons.map((item) => (
+              <div className="w-12 mx-3 sm:mx-1 rounded-full">
+                {/* <PythonIcon /> */}
+                <SvelteIcon />
+              </div>
+            ))}
+          </div>
+        )}
         <div className="flex mt-2 items-center w-full justify-between">
           {link !== "" ? (
             <Link
