@@ -38,6 +38,7 @@ export const project_config = [
     img: rate_my_professor_io,
     github: "",
     link: "https://williamcaseylucas.github.io/ratemyprofessorio-site/",
+    icons: [TechIcons.React, TechIcons.Tailwind, TechIcons.Figma],
   },
   {
     type: Project.PROJECT,
@@ -59,6 +60,16 @@ export const project_config = [
     img: digitalhippoImages[6],
     github: "",
     link: "",
+    icons: [
+      TechIcons.Next,
+      TechIcons.Typescript,
+      TechIcons.Prisma,
+      TechIcons.Express,
+      TechIcons.Tailwind,
+      TechIcons.MySQL,
+      TechIcons.TRPC,
+      TechIcons.PlanetScale,
+    ],
   },
   {
     type: Project.PROJECT,

@@ -26,6 +26,7 @@ const FeaturedProject = ({
   setOpenModal = null,
   setImages = null,
   images = null,
+  icons = null,
 }) => {
   return (
     <article className="relative w-full flex flex-col lg:flex-row p-4 sm:p-8 lg:p-12 items-center justify-between xs:rounded-3xl xs:rounded-br-2xl rounded-2xl rounded-br-3xl border border-solid border-dark bg-light shadow-2xl   dark:bg-dark dark:border-light mb-10">
@@ -66,9 +67,19 @@ const FeaturedProject = ({
         <span className="text-primary dark:text-primaryDark font-medium text-2xl">
           {type}
         </span>
+        {icons && (
+          <div className="flex mt-2 items-center w-full gap-4">
+            {icons.map(({ Icon }) => (
+              <div className="w-[24px] mx-3 sm:mx-1 ">
+                <Icon />
+              </div>
+            ))}
+          </div>
+        )}
         <h2 className="my-2 w-full text-dark dark:text-light text-left text-4xl font-bold underline underline-offset-4">
           {title}
         </h2>
+
         {/* <Link
           className="hover:underline underline-offset-2"
           href={link}
