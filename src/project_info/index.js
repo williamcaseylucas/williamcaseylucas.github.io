@@ -26,26 +26,7 @@ import sklearn_streamlit_visualizer from "public/images/projects/ml/sklearn_stre
 import rate_my_professor_io from "public/images/projects/carousel/rate_my_professor_io/RMP_IO.png";
 import cs7450hw1 from "public/images/projects/carousel/cs7450-hw1/cs-7450-hw1.png";
 
-import {
-  PythonIcon,
-  SvelteIcon,
-  DjangoIcon,
-  FastAPI,
-  ReactIcon,
-  NextJSIcon,
-  PrismaIcon,
-  FirebaseIcon,
-  AWSIcon,
-  AzureIcon,
-  GCPIcon,
-  ExpressJSIcon,
-  TensorFlowIcon,
-  JavaIcon,
-  HTMLIcon,
-  CSSIcon,
-  TailwindIcon,
-  FigmaIcon,
-} from "@/components/icons";
+import { TechIcons } from "@/components/icons";
 
 export const project_config = [
   {
@@ -67,7 +48,7 @@ export const project_config = [
     img: cs7450hw1,
     github: "",
     link: "https://williamcaseylucas.github.io/cs7450-hw1-live-demo/",
-    icons: [PythonIcon],
+    icons: [TechIcons.Svelte, TechIcons.HTML, TechIcons.CSS],
   },
   {
     type: Project.FEATURED,

@@ -8,6 +8,7 @@ import {
   LinkedInIcon,
   PythonIcon,
   SvelteIcon,
+  techIcons,
 } from "@/components/icons";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -171,6 +172,15 @@ const Project = ({
           <span className="text-primary dark:text-primaryDark font-medium text-2xl">
             {type}
           </span>
+          {icons && (
+            <div className="flex mt-2 items-center w-full gap-4">
+              {icons.map(({ Icon }) => (
+                <div className="w-[24px] mx-3 sm:mx-1 ">
+                  <Icon />
+                </div>
+              ))}
+            </div>
+          )}
           <h2 className="my-2 w-full text-dark dark:text-light text-left text-3xl font-bold ">
             {title}
           </h2>
@@ -184,16 +194,7 @@ const Project = ({
             {summary}{" "}
           </p>
         </div>
-        {icons && (
-          <div className="flex mt-2 items-center w-full justify-between">
-            {icons.map((item) => (
-              <div className="w-12 mx-3 sm:mx-1 rounded-full">
-                {/* <PythonIcon /> */}
-                <SvelteIcon />
-              </div>
-            ))}
-          </div>
-        )}
+
         <div className="flex mt-2 items-center w-full justify-between">
           {link !== "" ? (
             <Link
