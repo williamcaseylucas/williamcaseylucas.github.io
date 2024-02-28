@@ -49,14 +49,14 @@ const Education = () => {
           <Details
             type="Masters of Science in Computer Science"
             time="Fall 2024"
-            place="the Georgia Institute of Technology"
+            place="Georgia Institute of Technology"
             info="Computer Vision | Natural Language Processing | Artificial Intelligence | Neural Networks | CreateX "
           />
           <Details
             type="Bachelor of Science in Computer Science"
             time="Fall 2023"
-            place="the Georgia Institute of Technology"
-            info="Machine Learning | Deep Learning | AI | Java | JavaFX | C | Assembly Code for the LC3 Microprocessor | Drone Robotics | Computer Graphics | Computer Animation | "
+            place="Georgia Institute of Technology"
+            info="Class Rank #1 of 7385 | Machine Learning | Deep Learning | AI | Java | JavaFX | C | Assembly Code for the LC3 Microprocessor | Drone Robotics | Computer Graphics | Computer Animation | "
           />
           <Details
             type="Diploma"

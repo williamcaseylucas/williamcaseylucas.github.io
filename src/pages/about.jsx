@@ -54,36 +54,55 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                My name is William Runyon and I am a candidate for a Bachelor of
+                My name is William Runyon and I am a candidate for a Master of
                 Science in Computer Science at the Georgia Institute of
                 Technology (GA Tech) in Atlanta, GA. I have a strong academic
                 background, being a Dean's List and Faculty Honors student and
-                earning a GPA of 4.0. Prior to attending GA Tech, I graduated as
-                valedictorian of my high school class in May 2019.
+                earning a GPA of 4.0, and earning a{" "}
+                <b>class rank of #1 out of 7385</b>. Prior to attending GA Tech,
+                I graduated as <b>valedictorian</b> of my high school class in
+                May 2019.
               </p>
               <p className="my-4 font-medium">
                 I have a diverse range of experience in the field of computer
-                science, including working on various projects and participating
-                in research at GA Tech. Some highlights of my experience include
-                collaborating with a team to create a 2D "Tower Defense" game
-                using JavaFX and design patterns, constructing and developing a
-                Convolutional Neural Network to classify Hiragana characters
-                with PyTorch, and contributing to the development of a drone
-                delivery system at GA Tech. In addition, I have also gained
-                practical experience by contributing to the Marta ARMY, LLC
-                website and developing a COVID-19 web-based tracker and a
-                Facebook Messenger clone.
+                science. I have been a <b>teaching assistant</b> for{" "}
+                <em className="text-blue-600">
+                  Intro to Object Oriented Programming
+                </em>{" "}
+                (1 semester) and{" "}
+                <em className="text-blue-600">Machine Learning</em> (4+
+                semesters). I have also been involved in{" "}
+                <b>four research groups at GT</b> with one focused on{" "}
+                <em className="text-blue-600">AR/VR</em> technologies that was
+                published in the MIT press (Reality Media Book); one focused on
+                developing a mobile app called
+                <em className="text-blue-600"> PopSign</em> to teach parents of
+                deaf children sign language so their children don't grow up with
+                learning deficit disorder; one focused on a{" "}
+                <em className="text-blue-600">
+                  drone-based inventory management system
+                </em>{" "}
+                where I was a team lead for 15+ students and created an
+                attendance tracker for the parent research group Environmental
+                Labs; and, most recently, a research project focused on creating
+                a{" "}
+                <em className="text-blue-600">
+                  multimodal machine learning model{" "}
+                </em>
+                that can take video information and produce a summary.
               </p>
               <p className="my-4 font-medium">
-                Outside of my studies and work, I have also been involved in
-                research at GA Tech's Augmented Environments Lab, where I have
-                incorporated AR and VR elements into interactive web-based
-                projects. In my free time, I enjoy staying up to date with the
-                latest developments in the field of computer science and
-                exploring new technologies. I am expected to graduate in the
-                Fall of 2023 and am eager to apply my knowledge and skills to
-                real-world challenges. I am interested in working as a full
-                stack web developer and a machine learning engineer.
+                In my last <b>internship</b> I gained experience working with
+                major cloud providers such as{" "}
+                <em className="text-blue-600">AWS, Azure, and GCP</em>.
+                Moreover, I leveraged the skills I gained working with these
+                providers to create a custom admin dashboard for Kyndryl which
+                could identify and reprovision resources in the cloud. This tool
+                projected{" "}
+                <em className="text-blue-600">
+                  driving down their Azure costs by 72%
+                </em>
+                .
               </p>
             </div>
             {/* Pic */}
