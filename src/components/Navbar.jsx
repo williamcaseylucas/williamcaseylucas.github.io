@@ -154,6 +154,7 @@ const Navbar = () => {
                 <MoonIcon className="fill-dark w-[24px] h-[24px]" />
               )}
             </button>
+
             {/* <motion.a
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -240,9 +241,9 @@ const Navbar = () => {
             onClick={() => setMode(mode === "dark" ? "light" : "dark")}
           >
             {mode === "dark" ? (
-              <SunIcon className="fill-dark" />
+              <SunIcon className="fill-dark w-[24px] h-[24px]" />
             ) : (
-              <MoonIcon className="fill-dark" />
+              <MoonIcon className="fill-dark w-[24px] h-[24px]" />
             )}
           </button>
         </nav>
