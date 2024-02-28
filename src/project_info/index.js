@@ -40,7 +40,8 @@ export const project_config = [
   {
     type: Project.PROJECT,
     title: "RateMyProfessorIO",
-    summary: "",
+    summary:
+      "For my Literature Media Communication class during my undergrad, we had to present a pitch to the class for a new product that combined AI with education. I pitched RateMyProfessorIO, which was one of the four selected from 20+ presentations. This site is a prototype built with React.js and designed from Figma.",
     images: rate_my_professor_io,
     img: rate_my_professor_io,
     github: "",
@@ -49,7 +50,8 @@ export const project_config = [
   {
     type: Project.FEATURED,
     title: "Digital Hippo Marketplace",
-    summary: "",
+    summary:
+      "This project utilizes payload CMS as a ORM so that users can add items directly to their store in the frontend. The frontend utilized Next.js 14 along with server side components to create fast loading screens and was connected with Stripe for users to checkout easily. Resend.com was used as a SMTP server to send emails both with order confirmations and login authentication tokens.",
     images: digitalhippoImages,
     img: digitalhippoImages[6],
     github: "",
@@ -58,7 +60,8 @@ export const project_config = [
   {
     type: Project.PROJECT,
     title: "Trello Clone",
-    summary: "",
+    summary:
+      "This app was created with Next.js 14, Prisma, Clerk (authentication), Stripe, and hello-pangea for draggable cards. Users could sign in, create workspaces, add boards (until their free tier was used up, at which point they had to update their subscription), see an activity log for each action they took, and create sections and new cards with additional details.",
     images: trelloImages,
     img: trelloImages[2],
     github: "",
