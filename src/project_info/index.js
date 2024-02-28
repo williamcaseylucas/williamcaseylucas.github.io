@@ -80,6 +80,7 @@ export const project_config = [
     img: trelloImages[2],
     github: "",
     link: "",
+    icons: [TechIcons.Next, TechIcons.Typescript, TechIcons.Prisma],
   },
   {
     type: Project.PROJECT,
@@ -90,6 +91,7 @@ export const project_config = [
     img: gtCourseTrackerImages[0],
     github: "",
     link: "",
+    icons: [TechIcons.Python, TechIcons.Selenium],
   },
   {
     type: Project.FEATURED,
