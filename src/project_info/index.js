@@ -101,7 +101,13 @@ export const project_config = [
     img: gtCourseTrackerImages[0],
     github: "",
     link: "",
-    icons: [TechIcons.Python, TechIcons.Selenium],
+    icons: [
+      TechIcons.Python,
+      TechIcons.Docker,
+      TechIcons.SMTP,
+      TechIcons.Cron,
+      TechIcons.Selenium,
+    ],
   },
   {
     type: Project.FEATURED,
