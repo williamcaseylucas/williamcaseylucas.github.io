@@ -135,7 +135,7 @@ export const project_config = [
   },
   {
     type: Project.PROJECT,
-    title: "Stock Price Prediction using Prophet ML, Streamlit, and Plotly",
+    title: "Stock Price Prediction using Prophet ML",
     summary:
       "This app makes stock predictions on Apple, Google, Microsoft, and Gamestop and lets the user determine how far out predictions should be made. It visualizes time series data from when the stock opened and closed from Yahoo Finance and then uses Facebook's Prophet model to make a prediction on the stock data and then displays the forecast data and components of the prediction.",
     images: null,
@@ -143,7 +143,12 @@ export const project_config = [
     github:
       "https://github.com/williamcaseylucas/stock_forecast_app_streamlit_prophet",
     link: "https://stockforecastappappprophet.streamlit.app/",
-    icons: [TechIcons.Streamlit, TechIcons.Python, TechIcons.Scikit],
+    icons: [
+      TechIcons.Streamlit,
+      TechIcons.Plotly,
+      TechIcons.Python,
+      TechIcons.Scikit,
+    ],
   },
   {
     type: Project.PROJECT,
