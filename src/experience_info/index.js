@@ -45,7 +45,7 @@ export const experience_info = [
 
   {
     position:
-      "Teaching Assistant for CS 1331 Intro to Object Oriented Programming'",
+      "Teaching Assistant for CS 1331 Intro to Object Oriented Programming",
     companyLink: "https://cs1331.gitlab.io/syllabus.html",
     company: "Georgia Institute of Technology",
     time: "Spring 2022",

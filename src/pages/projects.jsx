@@ -63,19 +63,21 @@ const FeaturedProject = ({
         </Link>
       )}
 
-      <div className="w-full lg:w-1/2 flex flex-col items-start justify-between lg:pl-6">
+      <div className="w-full lg:w-1/2 flex flex-col h-full items-start justify-between lg:pl-6">
         <span className="text-primary dark:text-primaryDark font-medium text-2xl">
           {type}
         </span>
-        {icons && (
-          <div className="flex mt-2 items-center w-full gap-4">
-            {icons.map(({ Icon }) => (
-              <div className="w-[24px] mx-3 sm:mx-1 ">
-                <Icon />
-              </div>
-            ))}
-          </div>
-        )}
+        <div>
+          {icons && (
+            <div className="flex flex-wrap mt-2 items-center w-full gap-4">
+              {icons.map(({ Icon }) => (
+                <div className="w-[24px] mx-3 sm:mx-1 ">
+                  <Icon />
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
         <h2 className="my-2 w-full text-dark dark:text-light text-left text-4xl font-bold underline underline-offset-4">
           {title}
         </h2>
