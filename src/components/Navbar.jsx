@@ -151,9 +151,13 @@ const Navbar = () => {
               onClick={() => setMode(mode === "dark" ? "light" : "dark")}
             >
               {mode === "dark" ? (
-                <SunIcon className="fill-dark w-[24px] h-[24px]" />
+                <div>
+                  <SunIcon className="fill-dark w-[24px] h-[24px]" />
+                </div>
               ) : (
-                <MoonIcon className="fill-dark w-[24px] h-[24px]" />
+                <div>
+                  <MoonIcon className="fill-dark w-[24px] h-[24px]" />
+                </div>
               )}
             </button>
 
@@ -244,9 +248,13 @@ const Navbar = () => {
             onClick={() => setMode(mode === "dark" ? "light" : "dark")}
           >
             {mode === "dark" ? (
-              <SunIcon className="fill-dark w-[24px] h-[24px]" />
+              <div>
+                <SunIcon className="fill-dark w-[24px] h-[24px]" />
+              </div>
             ) : (
-              <MoonIcon className="fill-dark w-[24px] h-[24px]" />
+              <div>
+                <MoonIcon className="fill-dark w-[24px] h-[24px]" />
+              </div>
             )}
           </button>
         </nav>

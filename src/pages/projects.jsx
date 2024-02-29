@@ -78,7 +78,7 @@ const FeaturedProject = ({
             </div>
           )}
         </div>
-        <h2 className="my-2 w-full text-dark dark:text-light text-left text-4xl font-bold underline underline-offset-4">
+        <h2 className="my-2 w-full text-dark dark:text-light text-left text-2xl sm:text-3xl font-bold underline underline-offset-4">
           {title}
         </h2>
 
@@ -186,7 +186,7 @@ const Project = ({
             {type}
           </span>
           {icons && (
-            <div className="flex mt-2 items-center w-full gap-4">
+            <div className="flex flex-wrap mt-2 items-center w-full gap-4">
               {icons.map(({ Icon }) => (
                 <div className="w-[24px] mx-3 sm:mx-1 ">
                   <Icon />
@@ -194,7 +194,7 @@ const Project = ({
               ))}
             </div>
           )}
-          <h2 className="my-2 w-full text-dark dark:text-light text-left text-3xl font-bold ">
+          <h2 className="my-2 w-full text-dark dark:text-light text-left text-2xl sm:text-3xl font-bold ">
             {title}
           </h2>
 
