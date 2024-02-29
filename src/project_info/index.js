@@ -102,6 +102,14 @@ export const project_config = [
     img: attendance_tracker[1],
     github: "",
     link: "",
+    icons: [
+      TechIcons.FastAPI,
+      TechIcons.MongoDB,
+      TechIcons.Next,
+      TechIcons.Python,
+      TechIcons.Typescript,
+      TechIcons.SocketIO,
+    ],
   },
   {
     type: Project.PROJECT,
@@ -112,6 +120,7 @@ export const project_config = [
     img: sklearn_streamlit_visualizer,
     github: "https://github.com/williamcaseylucas/streamlit_scikit_learn_basic",
     link: "https://appscikitlearnbasic.streamlit.app/",
+    icons: [TechIcons.Streamlit, TechIcons.Python, TechIcons.Scikit],
   },
   {
     type: Project.PROJECT,
@@ -123,6 +132,7 @@ export const project_config = [
     github:
       "https://github.com/williamcaseylucas/stock_forecast_app_streamlit_prophet",
     link: "https://stockforecastappappprophet.streamlit.app/",
+    icons: [TechIcons.Streamlit, TechIcons.Python, TechIcons.Scikit],
   },
   {
     type: Project.PROJECT,
@@ -134,6 +144,7 @@ export const project_config = [
     github:
       "https://github.com/williamcaseylucas/django-react-studynotes/tree/main",
     link: "",
+    icons: [TechIcons.Python, TechIcons.Django, TechIcons.React],
   },
   {
     type: Project.PROJECT,
@@ -144,6 +155,12 @@ export const project_config = [
     img: expenseTrackerFirebase[1],
     github: "https://github.com/williamcaseylucas/expense_tracker_firebase",
     link: "",
+    icons: [
+      TechIcons.Next,
+      TechIcons.Typescript,
+      TechIcons.Firebase,
+      TechIcons.Tailwind,
+    ],
   },
   {
     type: Project.FEATURED,
@@ -155,6 +172,16 @@ export const project_config = [
     img: cloudCents[6],
     github: "",
     link: "",
+    icons: [
+      TechIcons.Next,
+      TechIcons.Redux,
+      TechIcons.AWS,
+      TechIcons.Lambda,
+      TechIcons.Azure,
+      TechIcons.GCP,
+      TechIcons.Figma,
+      TechIcons.Tailwind,
+    ],
   },
   {
     type: Project.PROJECT,
@@ -165,6 +192,12 @@ export const project_config = [
     img: memoriesImages[2],
     github: "https://github.com/williamcaseylucas/memories-full-stack",
     link: "",
+    icons: [
+      TechIcons.React,
+      TechIcons.Express,
+      TechIcons.MongoDB,
+      TechIcons.Tailwind,
+    ],
   },
   {
     type: Project.PROJECT,
@@ -175,6 +208,14 @@ export const project_config = [
     img: djangoRealtorImages[0],
     github: "https://github.com/williamcaseylucas/realtor-website-django",
     link: "",
+    icons: [
+      TechIcons.HTML,
+      TechIcons.CSS,
+      TechIcons.Django,
+      TechIcons.Python,
+      TechIcons.Postgres,
+      TechIcons.Docker,
+    ],
   },
   {
     type: Project.FEATURED,
@@ -185,6 +226,12 @@ export const project_config = [
     img: deepLearningProject,
     github: "",
     link: "https://drive.google.com/file/d/1L2Q5HMXMFAHfp5cqngXX9j0g0YO0UeQi/view",
+    icons: [
+      TechIcons.Python,
+      TechIcons.Scikit,
+      TechIcons.TensorFlow,
+      TechIcons.Pandas,
+    ],
   },
   {
     type: Project.PROJECT,
@@ -195,6 +242,12 @@ export const project_config = [
     img: machineLearningProject,
     github: "",
     link: "https://www.youtube.com/watch?v=rz7OoKlQDd8",
+    icons: [
+      TechIcons.Python,
+      TechIcons.Scikit,
+      TechIcons.TensorFlow,
+      TechIcons.Pandas,
+    ],
   },
   {
     type: Project.PROJECT,
@@ -205,6 +258,7 @@ export const project_config = [
     img: towerDefenseProject,
     github: "",
     link: "https://www.youtube.com/watch?v=fEl2JX4xtHE",
+    icons: [TechIcons.Java],
   },
   {
     type: Project.FEATURED,
