@@ -38,7 +38,12 @@ export const project_config = [
     img: rate_my_professor_io,
     github: "",
     link: "https://williamcaseylucas.github.io/ratemyprofessorio-site/",
-    icons: [TechIcons.React, TechIcons.Tailwind, TechIcons.Figma],
+    icons: [
+      TechIcons.React,
+      TechIcons.CICD,
+      TechIcons.Tailwind,
+      TechIcons.Figma,
+    ],
   },
   {
     type: Project.PROJECT,
@@ -80,7 +85,12 @@ export const project_config = [
     img: trelloImages[2],
     github: "",
     link: "",
-    icons: [TechIcons.Next, TechIcons.Typescript, TechIcons.Prisma],
+    icons: [
+      TechIcons.Next,
+      TechIcons.Typescript,
+      TechIcons.Prisma,
+      TechIcons.Postgres,
+    ],
   },
   {
     type: Project.PROJECT,
@@ -103,9 +113,10 @@ export const project_config = [
     github: "",
     link: "",
     icons: [
+      TechIcons.Next,
+      TechIcons.CICD,
       TechIcons.FastAPI,
       TechIcons.MongoDB,
-      TechIcons.Next,
       TechIcons.Python,
       TechIcons.Typescript,
       TechIcons.SocketIO,
@@ -136,7 +147,7 @@ export const project_config = [
   },
   {
     type: Project.PROJECT,
-    title: "Study Notes App - Full Stack (React + Django + jsonServer",
+    title: "Study Notes App - Full Stack",
     summary:
       "The study notes app is a full stack application intended to mimick the notes app on the iPhone. The user can create a new note, update a note, and delete a note. The app was first constructed using JSON server to simulate an api, and then it was converted to utilizing Django REST framework with CORS properties and a MVC template. This app also took advantage of a Makefile, which allowed me to run custom commands to make migrations and run the database's server.",
     images: djangoNotesImages,
@@ -148,7 +159,7 @@ export const project_config = [
   },
   {
     type: Project.PROJECT,
-    title: "Expense Tracker App - Full Stack (NextJS, TypeScript, Firebase)",
+    title: "Expense Tracker App - Full Stack",
     summary:
       "This app was written in NextJS with TypeScript and ESLint for the frontend and utilized Firebase for the backend. The expense tracker could add new values, delete old values, and would display a running total on the bottom.",
     images: expenseTrackerFirebase,
@@ -164,8 +175,7 @@ export const project_config = [
   },
   {
     type: Project.FEATURED,
-    title:
-      "Admin Dashboard - Kyndryl Internship - Full Stack (Nextjs, Redux, Redux Query, Azure Functions, Azure Pipeline CI/CD)",
+    title: "Admin Dashboard - Kyndryl Internship - Full Stack",
     summary:
       "CloudCents is a SAAS solution that takes credentials for a company's Azure subscription and runs diagnostics on the usage of the most expensive resources in Azure (virtual machines, bastions, storage, app services, application gateways). During this process, Azure functions are filtering through the Azure API and are sending a new JSON object to the frontend so that relevant information can be parsed efficiently. This project made use of NextJS, Redux and Redux Query for state management and cacheing API calls, and allowed the user to add a subscription, select it as the one to view diagnostics on, view general statistics from the overview page, and then click into a specific resource from the table to see why the resource should be modified. The client can also implement these suggesstions by clicking into a resource and clicking the button 'scale up', 'scale down', 'start', or 'stop'. If Kyndryl were to implement all of the suggestions made via this application, the company would drive down Azure costs by 72%.",
     images: cloudCents,
@@ -177,6 +187,7 @@ export const project_config = [
       TechIcons.Redux,
       TechIcons.AWS,
       TechIcons.Lambda,
+      TechIcons.CICD,
       TechIcons.Azure,
       TechIcons.GCP,
       TechIcons.Figma,
