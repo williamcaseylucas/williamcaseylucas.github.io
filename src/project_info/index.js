@@ -217,7 +217,7 @@ export const project_config = [
   },
   {
     type: Project.PROJECT,
-    title: "Realtor Site - (HTML, CSS, Bootstrap, Django)",
+    title: "Realtor Site",
     summary:
       "This application renders specific html components using Django on the frontend, and then stores realtors and listings via PostgreSQL and Django-REST Framework in the backend. During development, I created a Docker container to hold the PostgreSQL database and PGAdmin for visualization within the docker container.",
     images: djangoRealtorImages,
@@ -227,6 +227,7 @@ export const project_config = [
     icons: [
       TechIcons.HTML,
       TechIcons.CSS,
+      TechIcons.Bootstrap,
       TechIcons.Django,
       TechIcons.Python,
       TechIcons.Postgres,
