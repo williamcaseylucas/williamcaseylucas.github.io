@@ -1,5 +1,13 @@
 export const experience_info = [
   {
+    position: "Incoming Software Engineer Intern",
+    companyLink: "https://www.amazon.com",
+    company: "Amazon",
+    time: "May 2024 - August 2024",
+    address: "Austin TX",
+    work: "",
+  },
+  {
     position: "Researcher",
     companyLink: "https://www.popsign.org/",
     company: "Georgia Institute of Technology",

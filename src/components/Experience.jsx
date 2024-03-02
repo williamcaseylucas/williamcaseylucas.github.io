@@ -10,14 +10,14 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
     <li
       ref={ref}
       // w-[60%]
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col text-sm sm:text-base items-center justify-between"
+      className="my-8 first:mt-0 last:mb-0 w-[70%] sm:w-[60%] mx-auto flex flex-col text-sm sm:text-base items-baseline justify-between"
     >
       <LiIcon reference={ref} />
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 1, type: "spring", damping: 7 }}
-        className="ml-12 sm:ml-0"
+        className="sm:ml-0 flex flex-col flex-wrap overflow-wrap"
       >
         <h3 className="font-bold capitalize text-2xl">
           {position}&nbsp;
@@ -32,7 +32,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         <span className="capitalize font-medium text-dark/75 dark:text-light/75">
           {time} | {address}
         </span>
-        <p className="font-medium w-full">{work}</p>
+        <p className="font-medium ">{work}</p>
       </motion.div>
     </li>
   );
@@ -52,12 +52,12 @@ const Experience = () => {
         Experience
       </h2>
 
-      {/*  */}
+      {/*   */}
       <div ref={ref} className="w-full  md:w-[90%] lg:w-[75%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
           transition={{ duration: 5, type: "spring", damping: 7 }}
-          className="absolute left-[20px] md:left-[30px] lg:left-9 md:w-[4px] top-1 w-[2px]  h-full bg-dark origin-top dark:bg-light"
+          className="absolute left-[20px] md:left-[30px] lg:left-9 md:w-[4px] top-1 w-[2px] h-full bg-dark origin-top dark:bg-light"
         />
         <ul className="w-full flex flex-col items-start">
           {experience_info.map((item) => (
