@@ -9,6 +9,7 @@ import {
   trelloImages,
   digitalhippoImages,
   gtCourseTrackerImages,
+  edtech_images,
 } from "../../public/images/projects/carousel";
 
 const Project = {
@@ -25,10 +26,19 @@ import prophet_stock_prediction from "public/images/projects/ml/streamlit_stock_
 import sklearn_streamlit_visualizer from "public/images/projects/ml/sklearn_streamlit_visualizer.png";
 import rate_my_professor_io from "public/images/projects/carousel/rate_my_professor_io/RMP_IO.png";
 import cs7450hw1 from "public/images/projects/carousel/cs7450-hw1/cs-7450-hw1.png";
-
 import { TechIcons } from "@/components/icons";
 
 export const project_config = [
+  {
+    type: Project.PROJECT,
+    title: "Ed Tech - Quizlet Redesign",
+    summary: "",
+    images: edtech_images,
+    img: edtech_images[17],
+    github: "",
+    link: "",
+    icons: [],
+  },
   {
     type: Project.PROJECT,
     title: "RateMyProfessorIO",

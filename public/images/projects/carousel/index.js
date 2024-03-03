@@ -144,3 +144,44 @@ export const cloudCents = [
   cc_dashboard,
   cc_dashboard_drilled,
 ];
+
+// Ed Tech
+import ed_tech_transition_1 from "./ed-tech-versions/Transitions/1.png";
+import ed_tech_01 from "./ed-tech-versions/Number 0 - SVG/Desktop - 21.svg";
+import ed_tech_02 from "./ed-tech-versions/Number 0 - SVG/Story Board.svg";
+import ed_tech_transition_2 from "./ed-tech-versions/Transitions/2.png";
+import ed_tech_11 from "./ed-tech-versions/Number 1 - SVG/Dashboard 1.svg";
+import ed_tech_12 from "./ed-tech-versions/Number 1 - SVG/Dashboard 2.svg";
+import ed_tech_13 from "./ed-tech-versions/Number 1 - SVG/Dashboard 4.svg";
+import ed_tech_14 from "./ed-tech-versions/Number 1 - SVG/Dashboard 5.svg";
+import ed_tech_15 from "./ed-tech-versions/Number 1 - SVG/Dashboard 6.svg";
+import ed_tech_16 from "./ed-tech-versions/Number 1 - SVG/Dashboard 7.svg";
+import ed_tech_17 from "./ed-tech-versions/Number 1 - SVG/Dashboard 8.svg";
+import ed_tech_18 from "./ed-tech-versions/Number 1 - SVG/Dashboard 9.svg";
+import ed_tech_transition_3 from "./ed-tech-versions/Transitions/3.png";
+import ed_tech_21 from "./ed-tech-versions/Number 2 - SVG/Dashboard 1 - New.svg";
+import ed_tech_22 from "./ed-tech-versions/Number 2 - SVG/Dashboard 2 - New.svg";
+import ed_tech_23 from "./ed-tech-versions/Number 2 - SVG/Dashboard 3 - New.svg";
+import ed_tech_24 from "./ed-tech-versions/Number 2 - SVG/Dashboard 4 - New.svg";
+import ed_tech_25 from "./ed-tech-versions/Number 2 - SVG/Dashboard 5 - New.svg";
+
+export const edtech_images = [
+  ed_tech_transition_1,
+  ed_tech_01,
+  ed_tech_02,
+  ed_tech_transition_2,
+  ed_tech_11,
+  ed_tech_12,
+  ed_tech_13,
+  ed_tech_14,
+  ed_tech_15,
+  ed_tech_16,
+  ed_tech_17,
+  ed_tech_18,
+  ed_tech_transition_3,
+  ed_tech_21,
+  ed_tech_22,
+  ed_tech_23,
+  ed_tech_24,
+  ed_tech_25,
+];
