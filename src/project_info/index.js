@@ -32,12 +32,13 @@ export const project_config = [
   {
     type: Project.PROJECT,
     title: "Ed Tech - Quizlet Redesign",
-    summary: "",
+    summary:
+      "Redesigned Quizlet with an additional whiteboard feature by developing numerous prototypes with Figma",
     images: edtech_images,
     img: edtech_images[17],
     github: "",
     link: "",
-    icons: [],
+    icons: [TechIcons.Figma],
   },
   {
     type: Project.PROJECT,
